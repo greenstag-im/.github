@@ -118,7 +118,7 @@ organisation, its direction, and the work taking root.
 ### [www.greenstag.im](https://www.greenstag.im/)
 
 [About us](https://www.greenstag.im/about) ·
-View://github.com/greenstag-im/repositories ·
+[Repos] (http://github.com/greenstag-im/repositories) ·
 [Get in touch](https://www.greenstag.im/contact)
 
 </div>
@@ -131,7 +131,7 @@ We would like to hear about it.
 
 - **Website:** [www.greenstag.im](https://www.greenstag.im/)
 - **Contact:** [greenstag.im/contact](https://www.greenstag.im/contact)
-- **GitHub:** https://github.com/greenstag-im
+- **GitHub:** [greenstag-im](https://github.com/greenstag-im)
 
 ---
 
