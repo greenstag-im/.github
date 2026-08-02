@@ -118,7 +118,7 @@ organisation, its direction, and the work taking root.
 ### [www.greenstag.im](https://www.greenstag.im/)
 
 [About us](https://www.greenstag.im/about) ·
-[View://github.com/greenstag-im/repositories ·
+View://github.com/greenstag-im/repositories ·
 [Get in touch](https://www.greenstag.im/contact)
 
 </div>
