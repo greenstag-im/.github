@@ -1,0 +1,208 @@
+# ============================================================
+# Secrets and local configuration
+# ============================================================
+
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.sample
+
+*.env
+*.local
+secrets/
+.secret/
+.credentials/
+
+*.pem
+*.key
+*.pfx
+*.p12
+*.jks
+*.keystore
+
+# Azure and local service settings
+local.settings.json
+appsettings.Local.json
+appsettings.Development.local.json
+
+# Google and service-account credentials
+service-account*.json
+credentials*.json
+
+# Do not broadly ignore all JSON, YAML or configuration files.
+# Many of them should be committed.
+
+# ============================================================
+# Python
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+ENV/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+*.egg-info/
+.eggs/
+dist/
+site/
+pip-wheel-metadata/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ============================================================
+# uv
+# ============================================================
+
+# Keep uv.lock committed for applications and reproducible projects.
+# Do not ignore uv.lock.
+
+# ============================================================
+# Node.js
+# ============================================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+
+# Keep package-lock.json, pnpm-lock.yaml and yarn.lock committed.
+
+# Framework output
+.next/
+.nuxt/
+.svelte-kit/
+.angular/
+coverage/
+
+# ============================================================
+# .NET and Visual Studio
+# ============================================================
+
+.vs/
+[Bb]in/
+[Oo]bj/
+TestResults/
+artifacts/
+
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet packages restored locally
+packages/
+*.nupkg
+*.snupkg
+
+# Keep project files, solution files and package lock files committed.
+
+# ============================================================
+# C, C++, CMake, Conan and vcpkg
+# ============================================================
+
+build/
+Build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+compile_commands.json
+
+conanbuildinfo.*
+conan.lock
+graph_info.json
+
+# Uncomment only if vcpkg is installed inside the repository.
+# vcpkg_installed/
+
+# ============================================================
+# Generic build output
+# ============================================================
+
+out/
+target/
+Debug/
+Release/
+x64/
+x86/
+
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+*.pdb
+*.ilk
+
+# ============================================================
+# Generated data and local databases
+# ============================================================
+
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+cache/
+tmp/
+temp/
+
+# ============================================================
+# AI and model assets
+# ============================================================
+
+*.safetensors
+*.ckpt
+*.gguf
+*.onnx
+*.pt
+*.pth
+*.bin
+
+models/
+checkpoints/
+outputs/
+
+# Do not use these rules if models or test fixtures are intentionally
+# versioned through Git LFS.
+
+# ============================================================
+# Operating system and editor files
+# ============================================================
+
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
