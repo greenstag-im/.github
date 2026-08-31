@@ -1,0 +1,193 @@
+name: Feature request
+description: Propose a new capability, improvement, change, or enhancement.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for proposing an improvement.
+
+        Describe the need, intended outcome, constraints, and acceptance criteria without including credentials, secrets, personal data, private repository names, internal infrastructure details, or other confidential information.
+
+        If the proposal contains sensitive information, do not submit it through a public repository.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Pre-submission checks
+      description: Confirm that the request is suitable for this repository.
+      options:
+        - label: I searched the existing issues and did not find an equivalent request.
+          required: true
+        - label: I confirmed that this request relates to this repository.
+          required: true
+        - label: I removed credentials, secrets, personal data, private repository details, and confidential information.
+          required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the proposed capability or change clearly and concisely.
+      placeholder: What should be added, changed, or improved?
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: Explain the problem, limitation, unmet need, or opportunity that prompted this request.
+      placeholder: |
+        Current situation:
+        Limitation or opportunity:
+        Effect on users or maintainers:
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Intended outcome
+      description: Describe the result that should exist after the request is implemented.
+      placeholder: What should users or maintainers be able to achieve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-change
+    attributes:
+      label: Proposed change
+      description: Describe the requested behaviour or capability without prescribing unnecessary implementation details.
+      placeholder: |
+        The proposed change should:
+        - provide...
+        - support...
+        - preserve...
+    validations:
+      required: true
+
+  - type: textarea
+    id: users
+    attributes:
+      label: Users and use cases
+      description: Identify who benefits and describe the principal use cases.
+      placeholder: |
+        Intended users:
+        Primary use case:
+        Additional use cases:
+    validations:
+      required: true
+
+  - type: dropdown
+    id: change-type
+    attributes:
+      label: Type of change
+      description: Select the option that best describes the request.
+      options:
+        - New capability
+        - Improvement to existing behaviour
+        - User experience improvement
+        - Developer experience improvement
+        - Documentation improvement
+        - Automation improvement
+        - Security improvement
+        - Governance improvement
+        - Performance improvement
+        - Compatibility improvement
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Expected impact
+      description: Select the expected scope of the benefit.
+      options:
+        - Benefits most users or workflows
+        - Benefits a significant workflow
+        - Benefits a specific user group or use case
+        - Minor convenience or quality improvement
+        - Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Define observable conditions that would demonstrate successful implementation.
+      placeholder: |
+        - [ ] The capability...
+        - [ ] Existing behaviour...
+        - [ ] Validation confirms...
+    validations:
+      required: true
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints and boundaries
+      description: Record relevant compatibility, security, governance, accessibility, performance, or operational constraints.
+      placeholder: |
+        Compatibility:
+        Security:
+        Governance:
+        Accessibility:
+        Performance:
+        Out of scope:
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe alternative approaches, existing workarounds, or reasons the current behaviour is insufficient.
+      placeholder: |
+        Alternative:
+        Reason not selected:
+        Current workaround:
+    validations:
+      required: false
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and related work
+      description: Identify related issues, public documentation, standards, or external dependencies.
+      placeholder: Add public links or non-sensitive references where relevant.
+    validations:
+      required: false
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and trade-offs
+      description: Describe known risks, costs, compatibility concerns, or trade-offs.
+      placeholder: |
+        Risk or trade-off:
+        Potential effect:
+        Possible mitigation:
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add public diagrams, examples, screenshots, or other information needed to assess the request.
+      placeholder: Add sanitised supporting material here.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: final-confirmation
+    attributes:
+      label: Final confirmation
+      options:
+        - label: The information in this request is accurate to the best of my knowledge.
+          required: true
+        - label: I understand that acceptance of this request does not guarantee implementation.
+          required: true

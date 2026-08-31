@@ -1,0 +1,154 @@
+name: Bug report
+description: Report a reproducible defect, failure, regression, or unexpected behaviour.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem.
+
+        Provide enough information to reproduce and investigate the issue without including credentials, secrets, personal data, private repository names, internal infrastructure details, or other confidential information.
+
+        If the report contains sensitive information, do not submit it through a public repository.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Pre-submission checks
+      description: Confirm that the report is suitable for this repository.
+      options:
+        - label: I searched the existing issues and did not find an equivalent report.
+          required: true
+        - label: I confirmed that this issue relates to this repository.
+          required: true
+        - label: I removed credentials, secrets, personal data, and confidential information.
+          required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the problem clearly and concisely.
+      placeholder: What is wrong, and what is the effect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: Expected behaviour
+      description: Describe what should have happened.
+      placeholder: Describe the expected result.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behaviour
+    attributes:
+      label: Actual behaviour
+      description: Describe what happened instead.
+      placeholder: Describe the observed result, including any visible error messages.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest reliable set of steps that reproduces the problem.
+      placeholder: |
+        1. Start from...
+        2. Perform...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reproducibility
+    attributes:
+      label: Reproducibility
+      description: How consistently can the issue be reproduced?
+      options:
+        - Every time
+        - Frequently
+        - Intermittently
+        - Once
+        - Unable to reproduce
+        - Unknown
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      description: Select the option that best describes the operational effect.
+      options:
+        - Blocking normal use
+        - Major functionality unavailable
+        - Partial functionality unavailable
+        - Minor functional problem
+        - Cosmetic or documentation problem
+        - Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Provide relevant versions, platforms, runtime details, or configuration without exposing sensitive information.
+      placeholder: |
+        Operating system:
+        Application or component version:
+        Runtime or browser:
+        Relevant non-sensitive configuration:
+    validations:
+      required: false
+
+  - type: textarea
+    id: regression
+    attributes:
+      label: Regression information
+      description: If this previously worked, describe the last known working version or state and the first known failing version or state.
+      placeholder: |
+        Last known working version or state:
+        First known failing version or state:
+        Relevant change:
+    validations:
+      required: false
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Add relevant logs, screenshots, diagnostics, or links after removing sensitive information.
+      placeholder: Paste sanitised evidence here, or drag files into this field.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Workaround
+      description: Describe any known workaround or recovery action.
+      placeholder: Describe the workaround, or state that none is known.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other information required to understand or investigate the problem.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: final-confirmation
+    attributes:
+      label: Final confirmation
+      options:
+        - label: The information in this report is accurate to the best of my knowledge.
+          required: true
