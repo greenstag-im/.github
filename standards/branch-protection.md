@@ -612,22 +612,7 @@ Exceptions must remain within the appropriate information-disclosure boundary.
 
 An external-source checkout outside GreenStag governance does not require an exception because it is outside this policy’s scope.
 
-## Review triggers
 
-Review this standard when:
-
-- another eligible maintainer is appointed
-- a visible GitHub review team is created
-- the GitHub organisation plan changes
-- repository visibility changes
-- a repository is renamed
-- required workflows change
-- a new deployment mechanism is introduced
-- CODEOWNERS changes
-- a bypass is used
-- an enforcement failure occurs
-- a protected repository becomes archived
-- the contribution model changes
 
 ## Compliance
 
@@ -645,6 +630,68 @@ A repository complies with the solo-maintainer baseline when:
 - bypass is limited and documented
 - the protection has been tested
 - limitations and exceptions are recorded
+
+
+## Control lifecycle
+
+### Current baseline controls
+
+The following controls apply under the current GitHub Free organisation plan where supported:
+
+- repository naming standard
+- private canonical repository map
+- repository-specific CODEOWNERS
+- organisation-level issue templates
+- organisation-level pull-request template
+- pull-request workflow
+- branch protection for supported public repositories
+- blocked force pushes where supported
+- blocked branch deletion where supported
+- conversation resolution where supported
+- reliable pull-request status checks where available
+- documented repository creation restriction
+- explicit repository access grants
+- documented SSO disposition
+
+### Future controls
+
+The following controls are deferred until organisational growth, risk, customer requirements or licensing changes justify them:
+
+- organisation-level rulesets
+- enforced protection for private repositories where unavailable on GitHub Free
+- mandatory independent pull-request approval
+- mandatory CODEOWNERS approval
+- centralised SSO
+- enterprise identity lifecycle management
+- enterprise audit and compliance controls
+- additional paid-plan governance capabilities
+
+### Review triggers
+
+Review the deferred controls when:
+
+- another human maintainer joins
+- repository access is delegated more broadly
+- the organisation begins employing staff
+- a customer or regulator requires stronger controls
+- a private repository requires enforceable branch protection
+- centralised identity management becomes necessary
+- the GitHub plan changes
+- the risk profile materially changes
+- another eligible maintainer is appointed
+- a visible GitHub review team is created
+- the GitHub organisation plan changes
+- repository visibility changes
+- a repository is renamed
+- required workflows change
+- a new deployment mechanism is introduced
+- CODEOWNERS changes
+- a bypass is used
+- an enforcement failure occurs
+- a protected repository becomes archived
+- the contribution model changes
+
+Deferred controls are not failed controls. They are controls whose implementation trigger has not yet occurred.
 
 ## Core principles
 
