@@ -1,0 +1,12 @@
+# GreenStag CODEOWNERS
+#
+# Default review ownership for this repository.
+#
+# This baseline applies until additional eligible maintainers or visible
+# GitHub teams are established with suitable repository access.
+#
+# Repository-specific path rules should be added only when they represent
+# real and distinct review responsibilities.
+
+* @agreenstag
+`
